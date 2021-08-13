@@ -1,7 +1,10 @@
-const networkRequest = () => {
+const networkRequest = (timeout) => {
     setTimeout(() => {
       console.log('Async Code');
-    }, 2000);
+    }, timeout);
   };
-  networkRequest();
+  
   console.log('Hello World');
+
+  networkRequest(2000);
+  console.log('The End');
